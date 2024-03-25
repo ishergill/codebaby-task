@@ -13,7 +13,7 @@ export default function Home() {
       <Sidebar />
       <Content />
     </div>
-    <BottomTabs />
+    {/* <BottomTabs /> */}
   </div>
   );
 }

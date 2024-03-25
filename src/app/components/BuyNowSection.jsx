@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { arrowCircleRightWhite, check } from "../assets";
 
 const content = [
   "Unlimited Speaking Test Access",
@@ -9,32 +10,32 @@ const content = [
 
 const BuyNowSection = () => {
   return (
-    <div className="bg-[#E5EFFF] md:m-3 m-0 rounded-xl">
-      <div className="px-4 pt-4">
-        <h2 className="text-transparent font-semibold text-lg bg-clip-text bg-gradient-to-r from-[#3561e4] to-[#7A7FFA]">
+    <div className="BuyNowSection">
+      <div className="BuyNowSection__top">
+        <h2 >
           Explore premium features with ease!
-          {/* #717171 */}
         </h2>
-        <div className="flex flex-col gap-2 mt-3 font-medium">
+        <div className="BuyNowSection__content">
           {content.map((content) => (
             <div
-              className="flex gap-2 text-md lg:text-[.80rem] text-[#717171]"
+              className="BuyNowSection__content__item "
               key={content}
             >
               <Image
-                src={''}
-                className="w-[1.1rem] h-[1.1rem] lg:w-[.9rem] lg:h-[.9rem] object-contain mt-[.20rem]"
-                alt=""
+                src={check}
+                alt="check"
+                height={24}
+                width={24}
               />
               <span>{content}</span>
             </div>
           ))}
         </div>
       </div>
-      <div className="flex justify-between mt-4 pb-4 font-medium items-center w-full">
-        <span className=" text-md lg:text-[.80rem] ml-4">Only @ ₹ 299</span>
-        <button className="text-white bg-[#1158DA] flex py-2 px-3 text-sm gap-2 rounded-s-full">
-          Buy Now <Image src={''} className="w-5 h-5" alt="" />
+      <div className="BuyNowSection__bottom">
+        <span className=" ">Only @ ₹ 299</span>
+        <button className="">
+          Buy Now <Image src={arrowCircleRightWhite}  alt="arrow" />
         </button>
       </div>
     </div>

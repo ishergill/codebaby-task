@@ -1,42 +1,48 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 
 const tabs = [
   {
+    id: 1,
     label: "Home",
-    icon: '',
+    icon: "",
   },
   {
+    id: 2,
     label: "Community",
-    icon: '',
+    icon: "",
   },
   {
+    id: 3,
     label: "Stories",
-    icon: '',
+    icon: "",
   },
   {
+    id: 4,
     label: "Shop",
-    icon:'',
+    icon: "",
   },
   {
+    id: 5,
     label: "Feedback",
-    icon: '',
+    icon: "",
   },
 ];
 const BottomTabs = () => {
   const [option, setOption] = useState(0);
+
   return (
-    <div className="grid lg:hidden grid-cols-5 h-24 pt-2 pb-3 px-3 gap-4 fixed bottom-0 left-0 w-full bg-white">
-      {tabs.map(({ label, icon }, index) => (
+    <div className="bottomTabs">
+      {tabs.map(({ id, label, icon }) => (
         <div
-          className={`flex flex-col p-2 justify-between items-center ${
-            option === index
-              ? "border-t border-t-blue-500 text-blue-500"
-              : " text-gray-800"
+          className={`bottomTabs__item ${
+            option === id
+              ? " bottomTabs__item__active "
+              : "bottomTabs__item__grey " 
           }`}
           key={label}
-          onClick={() => setOption(index)}
+          onClick={() => setOption(id)}
         >
           {icon}
           <span>{label}</span>

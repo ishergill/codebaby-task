@@ -5,7 +5,7 @@ import checklist from "./checklist.png";
 import classes from "./classes.png";
 import home from "./home.png";
 import ilestsExam from "./ilestsExam.png";
-import inicon from "./in.png";
+import inicon from "./inIcon.png";
 import listening from "./listening.png";
 import logo from "./logo.png";
 import logouticon from "./logouticon.png";
@@ -22,6 +22,7 @@ import whatsapp from "./whatsapp.png";
 import writeing from "./writeing.png";
 import youtube from "./youtube.png";
 import Users from "./users.png";
+import check from './check.png';
 
 export {
   arrowCircleRightBlack,
@@ -47,5 +48,6 @@ export {
   whatsapp,
   writeing,
   youtube,
-  Users
+  Users,
+  check
 };

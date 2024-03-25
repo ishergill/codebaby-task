@@ -1,0 +1,60 @@
+.ShareApp {
+  position: relative;
+  height: 50vh;
+  img {
+    height: 100%;
+    width: 100%;
+    object-position: right top;
+    object-fit: cover;
+    border-radius: 0.75rem;
+  }
+  &__data {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    @media (min-width: 768px) {
+      align-items: center;
+      text-align: left;
+      width: 70%;
+    }
+    h3 {
+      font-family: serif;
+      font-size: 3xl;
+      color: white;
+      font-weight: medium;
+    }
+    p {
+      color: gray;
+      font-weight: 300;
+      font-size: 2rem;
+    }
+
+    button {
+      background-color: #ffffff;
+      transition-property: background-color;
+      transition-duration: 300ms;
+      border-radius: 9999px;
+      color: #4b5563;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      margin-top: 0.75rem;
+      font-weight: 500;
+      &:hover {
+        background-color: #d1d5db;
+      }
+      @media (min-width: 768px) {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+      }
+    }
+  }
+}

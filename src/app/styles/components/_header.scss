@@ -1,0 +1,85 @@
+.Header {
+  display: flex;
+  flex-direction: column;
+
+  &__desktop {
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #f6ddc9;
+    justify-content: center;
+    span {
+      color: #df7146;
+      font-size: 0.875rem;
+    }
+  }
+  &__mobile {
+    background-image: linear-gradient(to bottom, #1158da, #002569);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    @media (min-width: 768px) {
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        width: 2.5rem;
+        height: 2.5rem;
+        object-fit: contain;
+        cursor: pointer;
+      }
+      span {
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.25rem;
+      }
+    }
+    &__btns {
+      border-radius: 9999px;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      color: white;
+      gap: 0.5rem;
+      background-color: #1c50af;
+      padding: 0.5rem;
+      &__list {
+        display: flex;
+        align-items: center;
+
+        &__divider {
+          height: 1.25rem;
+          width: 1px;
+          background-color: #fff;
+        }
+        span {
+          border-radius: 9999px;
+          padding: 0.5rem;
+          width: 5rem;
+          display: flex;
+          justify-content: center;
+          cursor: pointer;
+        }
+        &--btn-active {
+          background-color: #ffffff;
+          color: #1c50af;
+        }
+        &--normal {
+          background-color: #1c50af;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
