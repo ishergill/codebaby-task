@@ -25,9 +25,9 @@ import msgicon from './msg-icon.svg';
 import shopicon from './shop-icon.svg';
 import storiesicon from './stories-icon.svg';
 import usericon from './user-icon.svg';
-import Storefront from "./store.png";
-import studentNews from "./newsstudent.png";
-import Users from "./Users.png";
+import Storefront from "./storefront.png";
+import  Users from "./usersimg.png";
+import  studentNews from "./studentnews.png";
 
 
 export {
