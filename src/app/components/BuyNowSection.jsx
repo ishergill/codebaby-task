@@ -1,5 +1,10 @@
 import Image from "next/image";
+
+// !assets
 import { arrowCircleRightWhite, check } from "../assets";
+
+
+const BuyNowSection = () => {
 
 const content = [
   "Unlimited Speaking Test Access",
@@ -7,8 +12,6 @@ const content = [
   "Analyze Your Answer",
   "Check Band Score",
 ];
-
-const BuyNowSection = () => {
   return (
     <div className="BuyNowSection">
       <div className="BuyNowSection__top">

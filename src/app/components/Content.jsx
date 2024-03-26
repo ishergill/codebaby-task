@@ -27,50 +27,6 @@ import {
   youtube,
 } from "../assets";
 
-const gridItems = [
-  {
-    id: 1,
-    icon: speaking,
-    title: "Speaking",
-  },
-  {
-    id: 2,
-    icon: listening,
-    title: "Listening",
-  },
-  {
-    id: 3,
-    icon: reading,
-    title: "Reading",
-  },
-  {
-    id: 4,
-    icon: writeing,
-    title: "Writing",
-  },
-  {
-    id: 5,
-
-    icon: vocabulary,
-    title: "Vocalbulary",
-  },
-  {
-    id: 6,
-
-    icon: classes,
-    title: "Classes",
-  },
-  {
-    id: 7,
-    icon: ilestsExam,
-    title: "Book IELTS Exam",
-  },
-  {
-    id: 8,
-    icon: studentNews,
-    title: "Student News",
-  },
-];
 
 const data = {
   labels: [
@@ -113,6 +69,51 @@ const options = {
 };
 Chart.register(CategoryScale);
 const Content = () => {
+  const gridItems = [
+    {
+      id: 1,
+      icon: speaking,
+      title: "Speaking",
+    },
+    {
+      id: 2,
+      icon: listening,
+      title: "Listening",
+    },
+    {
+      id: 3,
+      icon: reading,
+      title: "Reading",
+    },
+    {
+      id: 4,
+      icon: writeing,
+      title: "Writing",
+    },
+    {
+      id: 5,
+  
+      icon: vocabulary,
+      title: "Vocalbulary",
+    },
+    {
+      id: 6,
+  
+      icon: classes,
+      title: "Classes",
+    },
+    {
+      id: 7,
+      icon: ilestsExam,
+      title: "Book IELTS Exam",
+    },
+    {
+      id: 8,
+      icon: studentNews,
+      title: "Student News",
+    },
+  ];
+  
   return (
     <div className="Content">
       <div className="Content__nav">
@@ -219,6 +220,8 @@ const Content = () => {
         </div>
 
         <div className="Content__mb__btns ">
+
+        <div className="Content__mb__btns ">
           <button >
             <Image src={youtube}  alt="youtube" />
             <span >App Guide Video</span>
@@ -227,6 +230,7 @@ const Content = () => {
             <Image src={whatsapp} className="w-5 h-5 object-contain" alt="" />
             <span >Help & Support</span>
           </button>
+        </div>
         </div>
 
         <div className="Content__mb__share">

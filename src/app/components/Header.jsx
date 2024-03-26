@@ -2,11 +2,14 @@
 
 import Image from "next/image";
 import { useState } from "react";
+
+// !assets
 import { inicon, user } from "../assets";
 
-const options = ["IELTS", "PTE", "TOEFL"];
 
 const Header = () => {
+const options = ["IELTS", "PTE", "TOEFL"];
+
   const [option, setOption] = useState(0);
   return (
     <div className="Header">

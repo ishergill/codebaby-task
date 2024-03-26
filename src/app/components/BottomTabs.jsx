@@ -2,40 +2,41 @@
 
 import { useState } from "react";
 import Image from "next/image";
+
+// !assets
 import { homeicon, msgicon, shopicon, storiesicon, usericon } from "../assets";
 
 
-
-const tabs = [
-  {
-    id: 1,
-    label: "Home",
-    icon: homeicon,
-  },
-  {
-    id: 2,
-    label: "Community",
-    icon: usericon,
-  },
-  {
-    id: 3,
-    label: "Stories",
-    icon: storiesicon,
-  },
-  {
-    id: 4,
-    label: "Shop",
-    icon: shopicon,
-  },
-  {
-    id: 5,
-    label: "Feedback",
-    icon: msgicon,
-  },
-];
 const BottomTabs = () => {
   const [option, setOption] = useState(1);
 
+  const tabs = [
+    {
+      id: 1,
+      label: "Home",
+      icon: homeicon,
+    },
+    {
+      id: 2,
+      label: "Community",
+      icon: usericon,
+    },
+    {
+      id: 3,
+      label: "Stories",
+      icon: storiesicon,
+    },
+    {
+      id: 4,
+      label: "Shop",
+      icon: shopicon,
+    },
+    {
+      id: 5,
+      label: "Feedback",
+      icon: msgicon,
+    },
+  ];
   return (
     <div className="bottomTabs">
       {tabs.map(({ id, label, icon }) => (
