@@ -219,9 +219,11 @@ const Content = () => {
           <BuyNowSection />
         </div>
 
-        <div className="Content__mb__btns ">
-
-        <div className="Content__mb__btns ">
+        <div className="Content__mb__btns__wrapper">
+<h3>
+  Quick Actions
+</h3>
+        <div className="Content__mb__btns__wrapper__main ">
           <button >
             <Image src={youtube}  alt="youtube" />
             <span >App Guide Video</span>
