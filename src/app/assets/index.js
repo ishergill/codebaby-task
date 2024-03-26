@@ -12,22 +12,23 @@ import logouticon from "./logouticon.png";
 import messagesquare from "./message-square.png";
 import reading from "./reading.png";
 import speaking from "./speaking.png";
-import Storefront from "./storefront.png";
 import stories from "./stories.png";
-import studentNews from "./studentnews.png";
 import tickmark from "./tickmark.png";
 import user from "./user.png";
 import vocabulary from "./vocabulary.png";
 import whatsapp from "./whatsapp.png";
 import writeing from "./writeing.png";
 import youtube from "./youtube.png";
-import Users from "./users.png";
 import check from './check.png';
 import homeicon from './home-icon.svg';
 import msgicon from './msg-icon.svg';
 import shopicon from './shop-icon.svg';
 import storiesicon from './stories-icon.svg';
 import usericon from './user-icon.svg';
+import Storefront from "./storefront.png";
+import studentNews from "./studentnews.png";
+import Users from "./users.png";
+
 
 export {
   arrowCircleRightBlack,
