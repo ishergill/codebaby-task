@@ -7,35 +7,28 @@ body {
   font-family: Poppins;
 }
 
+html {
+  font-size: 100%;
 
+  @include respond(big-desk) {
+    font-size: 90%;
+  }
 
-// html {
-//   font-size: 62.5%; //1rem = 10px; 10px/16px% = 62.5
+  @include respond(tab-land) {
+    font-size: 80%;
+  }
 
-//   @include respond(big-desk) {
-//     //width < 1200px ?
-//     font-size: 75%; // 1rem = 12px; 9/16% = 75%
-//   }
+  @include respond(tab-pot) {
+    font-size: 60%;
+  }
 
-//   @include respond(tab-land) {
-//     //width < 1200px ?
-//     font-size: 56.25%; // 1rem = 9px; 9/16% = 56.25%
-//   }
-
-//   @include respond(tab-pot) {
-//     //width < 900px ?
-//     font-size: 50%; // 1rem = 8px; 8/16% = 50%
-//   }
-
-//   @include respond(phone-med) {
-//     //width < 900px ?
-//     font-size: 40%; // 1rem = 7px; 7/16% = 43.75%
-//   }
-//   @include respond(phone) {
-//     //width < 900px ?
-//     font-size: 43.75%; // 1rem = 7px; 7/16% = 43.75%
-//   }
-// }
+  @include respond(phone-med) {
+    font-size: 65%;
+  }
+  @include respond(phone) {
+    font-size: 75%;
+  }
+}
 
 p,
 h1,
@@ -66,4 +59,13 @@ input {
 
 input[type="checkbox"] {
   accent-color: #000;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  &__wrapper {
+    display: flex;
+  }
 }

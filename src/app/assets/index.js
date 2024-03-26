@@ -23,6 +23,11 @@ import writeing from "./writeing.png";
 import youtube from "./youtube.png";
 import Users from "./users.png";
 import check from './check.png';
+import homeicon from './home-icon.svg';
+import msgicon from './msg-icon.svg';
+import shopicon from './shop-icon.svg';
+import storiesicon from './stories-icon.svg';
+import usericon from './user-icon.svg';
 
 export {
   arrowCircleRightBlack,
@@ -49,5 +54,10 @@ export {
   writeing,
   youtube,
   Users,
-  check
+  check,
+  usericon,
+  homeicon,
+  storiesicon,
+  shopicon,
+  msgicon
 };

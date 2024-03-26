@@ -80,7 +80,6 @@ const data = {
     "15 Feb",
     "14 Feb",
     "13 Feb",
-    "12 Feb",
     "11 Feb",
    
   ],
@@ -95,7 +94,7 @@ const data = {
 
 const options = {
   responsive: true,
-  aspectRatio: 6 / 3,
+  aspectRatio: 8.9 / 3,
   maintainAspectRatio: true,
   plugins: {
     legend: {
@@ -160,16 +159,20 @@ const Content = () => {
           </h3>
           <div className="Content__btns__main">
             <div className="Content__btns__main__left">
-              {gridItems.map(({ icon, title }) => (
+              {gridItems.map(({ id, icon, title }) => (
                 <div
                   className={`Content__btns__main__left__card  
                   ${title === "Book IELTS Exam" && "order-last md:order-2"}
                   `}
-                  key={title}
+                  key={id}
                 >
                   <Image
                     src={icon}
                     alt={title}
+
+                    style={{
+                      scale : id === 8 ? 1.1 : 1,
+                    }}
                   />
                   <span >
                     {title}
@@ -226,7 +229,7 @@ const Content = () => {
           </button>
         </div>
 
-        <div className="Content__mb__buynow">
+        <div className="Content__mb__share">
           <ShareApp />
         </div>
       </div>

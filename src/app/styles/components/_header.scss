@@ -8,10 +8,14 @@
     padding-bottom: 0.5rem;
     background-color: #f6ddc9;
     justify-content: center;
+    @include respond(phone){
+      display: none;
+    }
     span {
       color: #df7146;
       font-size: 0.875rem;
     }
+
   }
   &__mobile {
     background-image: linear-gradient(to bottom, #1158da, #002569);
@@ -19,9 +23,11 @@
     padding-bottom: 0.75rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    @media (min-width: 768px) {
-      padding-left: 3.5rem;
-      padding-right: 3.5rem;
+    display: none;
+    @include respond(phone) {
+      display: block;
+      padding-left: 1rem;
+      padding-right: 1rem;
       padding-top: 1.5rem;
       padding-bottom: 1.5rem;
     }
@@ -30,15 +36,15 @@
       justify-content: space-between;
       align-items: center;
       img {
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2.2rem;
+        height: 2.2rem;
         object-fit: contain;
         cursor: pointer;
       }
       span {
         color: #fff;
-        font-weight: 500;
-        font-size: 1.25rem;
+        font-weight: 400;
+        font-size: 1rem;
       }
     }
     &__btns {
@@ -51,7 +57,6 @@
       display: flex;
       align-items: center;
       color: white;
-      gap: 0.5rem;
       background-color: #1c50af;
       padding: 0.5rem;
       &__list {
@@ -66,7 +71,7 @@
         span {
           border-radius: 9999px;
           padding: 0.5rem;
-          width: 5rem;
+          width: 4rem;
           display: flex;
           justify-content: center;
           cursor: pointer;

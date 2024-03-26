@@ -62,7 +62,8 @@ const Sidebar = () => {
               className={`Sidebar__top__menu__item`}
               key={id}
               style={{
-                backgroundColor : '#3771DD'
+                backgroundColor : id === 1 ? '#3771DD' : '',
+                
               }}
             >
               <Image
@@ -71,7 +72,11 @@ const Sidebar = () => {
                 height={24}
                 width={24}
               />
-              <span >{label}</span>
+              <span 
+              style={{
+                fontWeight : id === 1 ? 400 : 300
+              }}
+              >{label}</span>
             </div>
           ))}
         </div>

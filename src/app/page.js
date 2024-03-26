@@ -7,13 +7,13 @@ import BottomTabs from "./components/BottomTabs";
 
 export default function Home() {
   return (
-    <div className="h-screen flex flex-col">
+    <div className="main">
     <Header />
-    <div className="flex flex-1">
+    <div className="main__wrapper">
       <Sidebar />
       <Content />
     </div>
-    {/* <BottomTabs /> */}
+    <BottomTabs />
   </div>
   );
 }

@@ -1,36 +1,40 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
+import { homeicon, msgicon, shopicon, storiesicon, usericon } from "../assets";
+
+
 
 const tabs = [
   {
     id: 1,
     label: "Home",
-    icon: "",
+    icon: homeicon,
   },
   {
     id: 2,
     label: "Community",
-    icon: "",
+    icon: usericon,
   },
   {
     id: 3,
     label: "Stories",
-    icon: "",
+    icon: storiesicon,
   },
   {
     id: 4,
     label: "Shop",
-    icon: "",
+    icon: shopicon,
   },
   {
     id: 5,
     label: "Feedback",
-    icon: "",
+    icon: msgicon,
   },
 ];
 const BottomTabs = () => {
-  const [option, setOption] = useState(0);
+  const [option, setOption] = useState(1);
 
   return (
     <div className="bottomTabs">
@@ -39,12 +43,12 @@ const BottomTabs = () => {
           className={`bottomTabs__item ${
             option === id
               ? " bottomTabs__item__active "
-              : "bottomTabs__item__grey " 
+              : "bottomTabs__item__grey "
           }`}
           key={label}
           onClick={() => setOption(id)}
         >
-          {icon}
+          <Image src={icon} alt={label} height={24} width={24} />
           <span>{label}</span>
         </div>
       ))}

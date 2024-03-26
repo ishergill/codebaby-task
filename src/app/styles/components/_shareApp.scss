@@ -1,11 +1,12 @@
 .ShareApp {
   position: relative;
-  height: 50vh;
+  height: 100%;
+
   img {
     height: 100%;
     width: 100%;
     object-position: right top;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 0.75rem;
   }
   &__data {
@@ -19,21 +20,27 @@
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    @media (min-width: 768px) {
+
+    @include respond(phone-med) {
       align-items: center;
       text-align: left;
       width: 70%;
     }
     h3 {
       font-family: serif;
-      font-size: 3xl;
+      font-size: 1.8rem;
       color: white;
       font-weight: medium;
+      text-align: center;
+      font-weight: 300;
     }
     p {
-      color: gray;
       font-weight: 300;
-      font-size: 2rem;
+      font-size: 0.8rem;
+      line-height: 1.4rem;
+      text-align: center;
+      color: white;
+      opacity: 0.8;
     }
 
     button {
@@ -46,12 +53,16 @@
       padding-bottom: 0.5rem;
       padding-left: 2.5rem;
       padding-right: 2.5rem;
-      margin-top: 0.75rem;
       font-weight: 500;
+      margin: 0 auto;
+      margin-top: 0.75rem;
+      width: 70%;
+      font-weight: 300;
+      font-size: 0.75rem;
       &:hover {
         background-color: #d1d5db;
       }
-      @media (min-width: 768px) {
+      @include respond(phone-med) {
         padding-left: 1.25rem;
         padding-right: 1.25rem;
       }
